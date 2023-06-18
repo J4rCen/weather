@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<main id="main">
+    <section id="main-content">
+        <section id="search-country">
+            <form id="form-search" action="" method="get">
+                <div>
+                    <input id="form-input-search" type="text" name="form-input-search" placeholder="Введите название города" required>
+                    <input id="form-input-submit" type="submit" value="Поиск">
+                </div>
+            </form>
+        </section>
+    
+        <section id="result-weatch">
+            <div class="cartWeather">
+                <figure class="condition">
+                    <img class="condition-img" src="" alt="">
+                    <figcaption>
+                        <p class="condition-text"></p>
+                    </figcaption>
+                </figure>
+    
+                <p class="last_updated"></p>
+                <p class="temperature"></p>
+                <p class="feelslike_c"></p>
+                <p class="wind_kph"></p>
+                <p class="uv"></p>
+                <p class="humidity"></p>
+            </div>
+    
+            <section id="hourly-weatch-id" class="hourly-weatch">
+                
+            </section>
+    
+        </section>
+    </section>
+</main>
+
+<footer id="footer">
+    <section id="weatherAPI">
+        <a href="https://www.weatherapi.com/" title="Free Weather API"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com"></a>
+        <p>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></p>
+    </section>
+    
+</footer>
+    
+</body>
+<script src="/js/variables.js"></script>
+<script src="/js/index.js"></script>
+</html>
